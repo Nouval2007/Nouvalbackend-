@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteraBook Store API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .status {
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .endpoints {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .endpoint {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        .endpoint:last-child {
+            margin-bottom: 0;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+        .get { background: #3b82f6; color: white; }
+        .post { background: #10b981; color: white; }
+        .put { background: #f59e0b; color: white; }
+        .delete { background: #ef4444; color: white; }
+        .path {
+            color: #374151;
+            font-family: 'Courier New', monospace;
+        }
+        .info {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 LiteraBook Store API</h1>
+        <p class="subtitle">Backend REST API untuk Toko Buku Online</p>
+        <span class="status">🚀 API Active</span>
+
+        <div class="endpoints">
+            <h2 style="margin-bottom: 15px; color: #333;">Available Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="method get">GET</span>
+                <span class="path">/books</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method get">GET</span>
+                <span class="path">/books/:id</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span>
+                <span class="path">/books</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method put">PUT</span>
+                <span class="path">/books/:id</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method delete">DELETE</span>
+                <span class="path">/books/:id</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method get">GET</span>
+                <span class="path">/categories</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method get">GET</span>
+                <span class="path">/users</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method get">GET</span>
+                <span class="path">/orders</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <strong>ℹ️ Info:</strong> Gunakan tools seperti Postman atau Thunder Client untuk menguji API endpoints.
+            Dokumentasi lengkap tersedia di <a href="https://github.com/Nouval2007/Nouvalbackend-">GitHub Repository</a>.
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ by Nouval Lutvil Alifian</p>
+            <p style="margin-top: 5px;">Powered by Express.js | Monitored with Vercel Speed Insights</p>
+        </div>
+    </div>
+
+    <!-- Vercel Speed Insights -->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>
