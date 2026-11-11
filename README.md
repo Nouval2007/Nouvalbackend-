@@ -183,6 +183,26 @@ Berkas pengujian berupa ekspor *koleksi pengujian* otomatis dapat diunduh langsu
 
 ---
 
+## 7. Vercel Speed Insights Integration
+
+Proyek ini telah diintegrasikan dengan **Vercel Speed Insights** untuk monitoring performa aplikasi secara real-time. Speed Insights membantu menganalisis Core Web Vitals dan performa loading halaman.
+
+### Fitur Speed Insights:
+- ✅ Monitoring Core Web Vitals (LCP, FID, CLS)
+- ✅ Real-time performance tracking
+- ✅ Otomatis terintegrasi saat deploy ke Vercel
+- ✅ Dashboard analytics di Vercel
+
+### Implementasi:
+Speed Insights telah ditambahkan pada:
+1. **Landing Page** (`/`): Halaman HTML dengan dokumentasi visual API
+2. **Speed Insights Middleware**: Tracking route information untuk API endpoints
+3. **Konfigurasi**: File `src/speed-insights.js` untuk pengaturan monitoring
+
+**Catatan:** Speed Insights utamanya bekerja untuk frontend monitoring. Untuk REST API murni, data performa dikumpulkan ketika user mengakses landing page.
+
+---
+
 ## Checklist Sebelum Mengumpulkan
 - [x] Minimal 5 tabel dengan relasi foreign key terpasang.
 - [x] Ada endpoint lengkap method GET, POST, PUT/PATCH, dan DELETE.
@@ -190,4 +210,4 @@ Berkas pengujian berupa ekspor *koleksi pengujian* otomatis dapat diunduh langsu
 - [x] Semua fungsi endpoint sudah lolos dites lewat Postman / Thunder Client.
 - [x] Dokumentasi README terstruktur lengkap dan URL skema ERD tersedia.
 - [x] Tidak ada kebocoran kredensial password database atau secret key di berkas repositori (menggunakan tab Environment Variables di dashboard Vercel).
--
+- [x] Vercel Speed Insights telah diintegrasikan untuk monitoring performa.
